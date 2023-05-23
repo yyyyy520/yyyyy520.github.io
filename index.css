@@ -1,0 +1,114 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+p{
+    font-size: 45px;
+    font-family:"Microsoft YaHei";
+    font-weight: 500;
+    text-align: center;
+    color: rgb(255, 249, 249);
+    position: relative;
+    top: 40px;
+}
+body{
+	background-color: #eeeeee;
+    background-image:url(img/9.jpg);
+	background-repeat: no-repeat;
+    /* 这个是控制背景大小的重点 */
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+ 
+.container{
+	width: 1300px;
+	height: 550px;
+	margin:60px auto;
+	position: absolute;
+    top: 150px;
+    margin-left: 150px;
+}
+ 
+ 
+.pic1{
+    top: 0;
+    right: 200px;
+    transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+}
+ 
+.pic2{
+    left: 300px;
+    top: 10px;
+    transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+}
+.pic3{
+    top: 220px;
+    right: 110px;
+    transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+}
+ 
+.pic4{
+    top: 160px;
+    left: 450px;
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+ 
+.pic5{
+    left: 600px;
+    top: 0;
+
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+.pic6{
+    left: 10px;
+    top: 0;
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+}
+ 
+.pic7{
+    left: 700px;
+    top: 200px;
+    transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+}
+.pic0{
+    bottom: -20px;
+    top: 190px;
+    left: 175px;
+    transform:rotate(5deg);
+    -webkit-transform:rotate(-15deg);
+}
+ 
+ 
+.container img{
+	 padding: 10px 10px 15px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    position: absolute;
+    z-index: 1;
+}
+ 
+.pic{
+	width: 200px;
+	margin-right: 1%;
+}
+ 
+.container>img:hover{
+	 box-shadow: 15px 15px 20px rgba(50,50,50,0.4);
+    transform:rotate(0deg) scale(2.20);
+    -webkit-transform:rotate(0deg) scale(1.50);
+    z-index: 1000;
+}
